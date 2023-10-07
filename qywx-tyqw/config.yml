@@ -1,0 +1,9 @@
+tongyi:
+  url: "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation"
+  api-key: "模型服务灵积>API-KEY管理>sk-****"
+qywx:
+  token: "应用管理>自建应用>接收消息>Token"
+  receiverId: "我的企业>企业信息>企业ID"
+  encodingAseKey: "应用管理>自建应用>接收消息>EncodingAseKey"
+  corpSecret: "应用管理>自建应用>Secret"
+
