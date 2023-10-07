@@ -13,7 +13,8 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositorie
         && git clone https://gitee.com/cynen/tencent-demo-go.git \
         && cd tencent-demo-go/qywx-tyqw \
         && CGO_ENABLED=0 go build -o tyqw
-
+# 代码仓github和gitee已经实现了同步,我们也可以配置 github的代码仓:
+# https://github.com/cynen/tencent-demo-go.git
 
 # build images
 
