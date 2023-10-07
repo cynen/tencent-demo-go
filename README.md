@@ -5,11 +5,28 @@
 ## 企业微信对接通义千问
 代码: [qywx-tyqw](qywx-tyqw)
 
-#### 安装教程
+### 安装教程
 
+#### 宿主机运行:
+1-5 步骤与容器运行不一样.后面一样的.
+
+1. 拉取代码
+2. 本地编译: 
+```
+cd qywx-tyqw
+go build -o qywx
+
+# 运行项目
+./qywx -c config.yml
+
+也可以省略配置
+./qywx 默认加载当前目录下的config.yml文件.
+```
+
+#### 容器运行:
 1. 此项目可以直接打包成docker镜像运行.
 2. 拉取代码.获取Dockerfile文件
-3. 修改config.yml中的配置.(非必须,后续也可以挂载进去)
+3. 修改config.yml中的配置.(非必须,后续也可以挂载进去,百度搜索容器挂载文件.)
 4. 构建镜像. `docker build -t tyqw .`
 5. 运行镜像
 ```
@@ -27,8 +44,12 @@ docker run -d --name tyqw -p 8888:8888 tyqw
 ```
     企业微信>应用管理>自建应用>接收消息>URL(回调地址)
     回调地址: https://qywx.test.cn/qywxpush
+    这里的qywxpush是我们在项目里的url路劲,main.go中可以查阅到.
 ```
 8. 点击保存,会自动校验地址是否可用.
+
+
+
 
 #### 特技
 
