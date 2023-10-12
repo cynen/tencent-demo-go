@@ -2,6 +2,8 @@
 
 微信相关联的代码仓,涉及公众号,小程序 等 演示代码.
 
+Notice: 此项目自动从此 gitee 同步到 [github](https://github.com/cynen/tencent-demo-go).如果有改动需求,直接更改gitee即可.
+
 ## 企业微信对接通义千问
 代码: [qywx-tyqw](qywx-tyqw)
 
